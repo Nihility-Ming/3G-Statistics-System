@@ -8,26 +8,26 @@ This's what I did in early 2014 an outsourcing project for a 3G salesman customi
 	</tr>
 	<tr>
 		<td>Login Page</td>
-		<td><img src="ScreenShorts/login.png" /></td>
+		<td><img src="ScreenShots/login.png" /></td>
 	</tr>
 	<tr>
 		<td>User Manage Page</td>
-		<td><img src="ScreenShorts/user_manage.png" /></td>
+		<td><img src="ScreenShots/user_manage.png" /></td>
 	</tr>
 	<tr>
 		<td>Add User Page</td>
-		<td><img src="ScreenShorts/add_user.png" /></td>
+		<td><img src="ScreenShots/add_user.png" /></td>
 	</tr>
 	<tr>
 		<td>Applications Manage Page</td>
-		<td><img src="ScreenShorts/applications_manage.png" /></td>
+		<td><img src="ScreenShots/applications_manage.png" /></td>
 	</tr>
 </table>
 
 
 ## Requirement
 * PHP 5.0 or late
-* MYSQL
+* MySQL
 * A WEB Browser Of HTML5 Support
 
 ## LICENSE
