@@ -1,0 +1,230 @@
+#
+# TABLE STRUCTURE FOR: pf_app
+#
+
+DROP TABLE IF EXISTS pf_app;
+
+CREATE TABLE `pf_app` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自动编号',
+  `name` varchar(50) NOT NULL COMMENT '应用名称',
+  `download` varchar(200) NOT NULL COMMENT '下载地址',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 COMMENT='应用表';
+
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (2, '节奏大师', 'http://gdown.baidu.com/data/wisegame/3d9c8cc4830976de/365riliwannianli_28.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (4, '经典超级马里奁', 'http://gdown.baidu.com/data/wisegame/3d9c8cc4830976de/365riliwannianli_28.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (5, '口袋战争：天降奇允', 'http://gdown.baidu.com/data/wisegame/3d9c8cc4830976de/365riliwannianli_28.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (6, '停车大师 3D', 'http://gdown.baidu.com/data/wisegame/3d9c8cc4830976de/365riliwannianli_28.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (8, '水果连连省3 HD', 'http://gdown.baidu.com/data/wisegame/3d9c8cc4830976de/365riliwannianli_28.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (9, '飞行棁 Simply Ludo', 'http://gdown.baidu.com/data/wisegame/3d9c8cc4830976de/365riliwannianli_28.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (10, 'QQ中国象棋', 'http://gdown.baidu.com/data/wisegame/3d9c8cc4830976de/365riliwannianli_28.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (23, '365日历', 'http://gdown.baidu.com/data/wisegame/3d9c8cc4830976de/365riliwannianli_28.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (25, '程序移动到SD卡', 'http://bcs.hiapk.91rb.com/data/upload/2013/12_11/21/com.probcomp.moveapps_211446.apk');
+INSERT INTO pf_app (`id`, `name`, `download`) VALUES (37, 'phpStudy 2014', 'http://www.phpstudy.net/phpstudy/phpStudy.zip ');
+
+
+#
+# TABLE STRUCTURE FOR: pf_date
+#
+
+DROP TABLE IF EXISTS pf_date;
+
+CREATE TABLE `pf_date` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自动编号',
+  `date` date NOT NULL COMMENT '预备日期',
+  `amount` varchar(11) NOT NULL COMMENT '数量',
+  `price` varchar(11) NOT NULL COMMENT '消费值',
+  `income` varchar(11) NOT NULL COMMENT '收入',
+  `user_id` int(11) NOT NULL COMMENT '用户ID',
+  `app_id` int(11) NOT NULL COMMENT '应用ID',
+  PRIMARY KEY (`id`,`app_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=160 DEFAULT CHARSET=utf8 COMMENT='日期和数量表';
+
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (122, '2014-02-26', '70', '50', '50', 1, 119);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (121, '2014-02-27', '60', '40', '40', 1, 119);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (120, '2014-02-28', '50', '30', '10', 1, 119);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (119, '2014-03-01', '40', '20', '20', 1, 119);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (118, '2014-03-02', '30', '10', '20', 1, 119);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (117, '2014-03-03', '20', '10', '10', 1, 119);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (116, '2014-03-04', '10', '80', '20', 1, 119);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (123, '2014-03-04', '1000', '5000', '50000', 1, 117);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (124, '2014-03-03', '2000', '10000', '100000', 1, 117);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (125, '2014-03-02', '6565', '656', '56', 1, 117);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (126, '2014-03-01', '565', '65', '6', 1, 117);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (127, '2014-02-28', '565', '6', '565', 1, 117);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (128, '2014-02-27', '65', '65', '656', 1, 117);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (129, '2014-02-26', '65', '656', '5654', 1, 117);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (130, '2014-03-04', '100', '1000', '10000', 34, 138);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (131, '2014-03-03', '600', '2000', '20000', 34, 138);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (132, '2014-03-02', '500', '3000', '30000', 34, 138);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (133, '2014-03-01', '200', '4000', '40000', 34, 138);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (134, '2014-02-28', '100', '5000', '50000', 34, 138);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (135, '2014-02-27', '300', '6000', '6000', 34, 138);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (136, '2014-02-26', '500', '7000', '70000', 34, 138);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (137, '2014-03-04', '123', '5659', '656', 34, 139);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (138, '2014-03-03', '896', '56', '59', 34, 139);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (139, '2014-03-02', '65698', '56', '85956', 34, 139);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (140, '2014-03-01', '95965', '95699', '565689', 34, 139);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (141, '2014-02-28', '5656', '9563', '56521', 34, 139);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (142, '2014-02-27', '6556', '65647', '654', 34, 139);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (143, '2014-02-26', '565', '65678', '6255', 34, 139);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (144, '2014-03-01', '10', '20', '30', 38, 140);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (145, '2014-03-02', '50', '60', '80', 38, 140);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (146, '2014-03-03', '70', '80', '9', 38, 140);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (147, '2014-03-04', '78', '540', '654', 38, 140);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (148, '2014-03-05', '88', '668', '552', 38, 140);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (156, '2014-03-04', '1', '', '', 38, 143);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (157, '2014-03-03', '0', '0', '', 38, 143);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (158, '2014-03-02', '', '0', '0', 38, 143);
+INSERT INTO pf_date (`id`, `date`, `amount`, `price`, `income`, `user_id`, `app_id`) VALUES (159, '2014-03-01', '0', '', '', 38, 143);
+
+
+#
+# TABLE STRUCTURE FOR: pf_download
+#
+
+DROP TABLE IF EXISTS pf_download;
+
+CREATE TABLE `pf_download` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自动编号',
+  `name` varchar(35) NOT NULL COMMENT '应用名称',
+  `download` varchar(200) NOT NULL COMMENT '下载地址',
+  `user_id` int(11) NOT NULL COMMENT '用户ID',
+  `app_id` int(11) NOT NULL COMMENT '应用ID',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=145 DEFAULT CHARSET=utf8 COMMENT='应用下载地址';
+
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (112, '水果连连省3 HD', 'http://www.163.com', 26, 8);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (124, 'QQ中国象棋', 'http://www.baidu.com', 28, 10);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (31, '发送到', 'http://www.sina.com.cn', 19, 7);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (30, '不错', 'http://www.iphone567.com', 19, 6);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (29, '回国后', 'http://www.9ttc.com/login.aspx', 19, 5);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (28, '不错', 'http://sc.chinaz.com', 19, 4);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (27, '宋大哥', 'http://www.google.com.hk', 19, 3);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (26, '很高', 'http://www.jquery.com', 19, 2);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (25, '千万', 'http://www.baidu.com', 19, 1);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (33, '过分的话', 'http://www.qq.com', 19, 9);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (125, '节奏大师', 'http://www.baidu.com', 28, 2);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (114, '口袋战争：天降奇允', 'http://www.9ttc.com/login.aspx', 26, 5);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (113, '停车大师 3D', 'http://www.iphone567.com', 26, 6);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (111, '飞行棁 Simply Ludo', 'http://www.qq.com', 26, 9);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (110, 'QQ中国象棋', 'http://www.hao123.com/helloworld.com', 26, 10);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (48, 'JavaServer Faces', 'http://www.w3school.com.cn/tiy/t.asp?f=jquery_ajax_serialize', 18, 0);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (49, '5000MB webruimte', 'http://www.w3school.com.cn/tiy/t.asp?f=jquery_ajax_serialize', 18, 0);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (109, '365日历', 'http://as.baidu.com/a/item?docid=5890006&pre=web_am_indexhot&pos=home_2005_2&f=home_2005_2', 26, 23);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (138, 'phpStudy 2014', 'http://www.phpstudy.net/phpstudy/phpStudy.zip', 34, 36);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (139, '365日历', 'http://www.phpstudy.net/phpstudy/phpStudy.zip', 34, 23);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (140, 'phpStudy 2014', 'http://www.phpstudy.net/a.php/198.html', 38, 36);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (62, '程序移动到SD卡', 'http://as.baidu.com/a/item?docid=5890311&pre=web_am_rel&pos=item_3004_6&f=item_3004_6_2910062016', 22, 25);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (92, '停车大师 3D', 'http://www.iphone567.com', 24, 6);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (64, '365日历', 'http://as.baidu.com/a/item?docid=5890006&pre=web_am_indexhot&pos=home_2005_2&f=home_2005_2', 22, 23);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (66, 'QQ中国象棋', 'http://www.hao123.com/helloworld.com', 22, 10);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (67, '飞行棁 Simply Ludo', 'http://www.qq.com', 22, 9);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (68, '水果连连省3 HD', 'http://www.163.com', 22, 8);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (69, '停车大师 3D', 'http://www.iphone567.com', 22, 6);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (70, '口袋战争：天降奇允', 'http://www.9ttc.com/login.aspx', 22, 5);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (71, '经典超级马里奁', 'http://sc.chinaz.com', 22, 4);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (72, '节奏大师', 'http://www.jquery.com', 22, 2);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (73, '天天酷跑', 'http://www.baidu.com', 22, 1);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (89, 'QQ中国象棋', 'http://www.hao123.com/helloworld.com', 24, 10);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (90, '飞行棁 Simply Ludo', 'http://www.qq.com', 24, 9);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (91, '水果连连省3 HD', 'http://www.163.com', 24, 8);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (116, '节奏大师', 'http://www.jquery.com', 26, 2);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (93, '口袋战争：天降奇允', 'http://www.9ttc.com/login.aspx', 24, 5);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (87, '365日历', 'http://as.baidu.com/a/item?docid=5890006&pre=web_am_indexhot&pos=home_2005_2&f=home_2005_2', 24, 23);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (86, '程序移动到SD卡', 'http://as.baidu.com/a/item?docid=5890311&pre=web_am_rel&pos=item_3004_6&f=item_3004_6_2910062016', 24, 25);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (94, '经典超级马里奁', 'http://sc.chinaz.com', 24, 4);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (95, '节奏大师', 'http://www.jquery.com', 24, 2);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (96, '程序移动到SD卡', 'http://as.baidu.com/', 25, 25);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (97, '365日历', 'http://as.baidu.com/a/item?', 25, 23);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (115, '经典超级马里奁', 'http://sc.chinaz.com', 26, 4);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (99, 'QQ中国象棋', 'http://www.hao123.com/helloworld.5c5435om', 25, 10);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (100, '飞行棁 Simply Ludo', 'http://www.qq.com43543', 25, 9);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (133, '程序移动到SD卡', 'http://www.baidu.com', 33, 25);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (102, '停车大师 4D', 'http://www.iphone567.com543543', 25, 6);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (103, '口袋战争：天降奇允', 'http://www.9ttc.com/login.aspx', 25, 5);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (104, '经典超级马里', 'http://sc.chinaz.com5435', 25, 4);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (105, '节奏大师', 'http://www.jquery.com', 25, 2);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (132, '水果连连省3 HD', 'http://www.baidu.com/hello.exe', 32, 0);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (121, '停车大师 3D', 'http://www.iphone567.com', 27, 6);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (122, '经典超级马里', 'http://sc.chinaz.com', 27, 4);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (123, '节奏大师', 'http://www.jquery.com', 27, 2);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (126, '程序移动到SD卡', 'http://www.abc.com/dd.exe', 29, 25);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (127, '程序移动到SD卡', 'http://www.abc.com/dd.exe', 30, 25);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (128, '酷跑 4HD', 'http://www.abc.com/dd.exe', 30, 0);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (129, '口袋战争：天降奇允', 'http://www.baidu.com', 31, 5);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (130, '程序移动到SD卡', 'http://www.baidu.com/hello.exe', 32, 25);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (131, '365日历', 'http://www.baidu.com/hello.exe', 32, 23);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (141, '365日历', 'http://www.phpstudy.net/a.php/198.html', 38, 23);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (137, '节奏大师', 'http://www.baidu.com', 33, 0);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (142, 'QQ中国象棋', 'http://www.baidu.com/link?', 38, 10);
+INSERT INTO pf_download (`id`, `name`, `download`, `user_id`, `app_id`) VALUES (143, '停车大师 3D', 'http://www.thinkphp.cn', 38, 0);
+
+
+#
+# TABLE STRUCTURE FOR: pf_money
+#
+
+DROP TABLE IF EXISTS pf_money;
+
+CREATE TABLE `pf_money` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自动编号',
+  `money` float NOT NULL COMMENT '金额',
+  `poundage` float NOT NULL COMMENT '手续费',
+  `reality` float NOT NULL COMMENT '税后收入',
+  `bank_name` varchar(30) NOT NULL COMMENT '开户银行',
+  `bank_accument` varchar(30) NOT NULL COMMENT '收款账号',
+  `cycle` varchar(30) NOT NULL COMMENT '结算周期',
+  `status` varchar(20) NOT NULL DEFAULT '无' COMMENT '汇款状态',
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COMMENT='汇款表';
+
+INSERT INTO pf_money (`id`, `money`, `poundage`, `reality`, `bank_name`, `bank_accument`, `cycle`, `status`, `user_id`) VALUES (2, '254.4', '15.26', '239.14', '建设银行', '6225882040', '2013-08-01至2013-08-15', '已汇款     ', 4);
+INSERT INTO pf_money (`id`, `money`, `poundage`, `reality`, `bank_name`, `bank_accument`, `cycle`, `status`, `user_id`) VALUES (12, '132', '22', '110', '建设银行', '12645678987523456', '2014-03-09至2014-04-11', '已汇款  ', 19);
+INSERT INTO pf_money (`id`, `money`, `poundage`, `reality`, `bank_name`, `bank_accument`, `cycle`, `status`, `user_id`) VALUES (6, '235.36', '25.36', '250', '建设银行', '62220210011', '2023-23-05至1503-36-36', '已汇款', 0);
+INSERT INTO pf_money (`id`, `money`, `poundage`, `reality`, `bank_name`, `bank_accument`, `cycle`, `status`, `user_id`) VALUES (5, '254.4', '15.26', '239.14', '建设银行', '6225882020', '2013-08-01至2013-08-15', '汇款失败 ', 23);
+INSERT INTO pf_money (`id`, `money`, `poundage`, `reality`, `bank_name`, `bank_accument`, `cycle`, `status`, `user_id`) VALUES (13, '235', '21', '342', '建设银行', '56484684864684685', '2014-02-06至2014-03-08', '已汇款', 1);
+INSERT INTO pf_money (`id`, `money`, `poundage`, `reality`, `bank_name`, `bank_accument`, `cycle`, `status`, `user_id`) VALUES (14, '2555', '55', '2500', '建设银行', '123456789987654321', 'xxxx-xx-xx至xxx-xx-xx', '待付款', 27);
+INSERT INTO pf_money (`id`, `money`, `poundage`, `reality`, `bank_name`, `bank_accument`, `cycle`, `status`, `user_id`) VALUES (17, '400', '10', '390', '交通银行', '12345678998765421', '2014-02-06至2014-03-08', '已汇款 ', 1);
+
+
+#
+# TABLE STRUCTURE FOR: pf_user
+#
+
+DROP TABLE IF EXISTS pf_user;
+
+CREATE TABLE `pf_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自动编号',
+  `username` varchar(50) NOT NULL COMMENT '用户名',
+  `password` varchar(50) DEFAULT NULL COMMENT '用户密码',
+  `realname` varchar(30) NOT NULL COMMENT '真实姓名',
+  `bank_name` varchar(30) NOT NULL COMMENT '银行名称',
+  `bank_accument` varchar(50) NOT NULL COMMENT '银行卡号',
+  `join_date` date NOT NULL COMMENT '注册日期',
+  `type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '用户类型',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username_2` (`username`),
+  UNIQUE KEY `username_3` (`username`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `username_4` (`username`)
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COMMENT='用户表';
+
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (1, 'nihility', '123456', '安含巧', '工商银行', '123456789987654321', '2014-02-26', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (3, 'admin', '123456', '', '', '', '2014-02-27', 1);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (23, 'tvloginq', '12355646', '武保柱', '建设银行', '4894665654', '2014-03-01', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (26, 'nihichina', '123456', '国梓穹', '建设银行', '123456789987654321', '2014-03-02', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (25, 'fjkdsjf', '123456', '雷淋', '农业银行', '123456987452145236', '2014-03-01', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (27, 'test1', '123456', '冯星宇', '工商银行', '123456789987654321', '2014-03-04', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (28, 'fuck1', '123456', '麻生太郎', '农村信用合作社', '123456789987654321', '2014-03-04', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (29, 'fuck2', '123456', '奥班马', '美国银行', '456985263698562412', '2014-03-04', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (30, 'fuck3', '654321', '里根', '美国民生银行', '456985263586362412', '2014-03-04', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (33, 'mingren', '123456', '漩涡鸣人', '木叶银行', '369852147741258963', '2014-03-05', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (31, 'abc147', '123456', '阿西斯', '交通银行', '147258369963258745', '2014-03-04', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (32, 'hello123', '123456', '陈浩', '民生银行', '147852369852147963', '2014-03-04', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (34, 'liuyifei', '147258369', '刘亦菲', '光大银行', '582369741326598475', '2014-03-05', 0);
+INSERT INTO pf_user (`id`, `username`, `password`, `realname`, `bank_name`, `bank_accument`, `join_date`, `type`) VALUES (38, 'Monkey', '523641', '漫客', '光大银行', '521469853632587452', '2014-03-05', 0);
+
+

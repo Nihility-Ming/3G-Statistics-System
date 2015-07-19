@@ -1,0 +1,72 @@
+/* 这里是全局风格 */
+* {
+	 padding:0;
+	 margin:0;
+}
+
+html,body {
+	 font:14px/22px "微软雅黑";
+	 background:url(../images/bg.jpg) no-repeat center top;
+}
+
+ul {
+	 list-style-type:none;
+}
+
+img {
+	 border:none;
+}
+
+/**/
+
+.hiddenText{
+	 text-indent:-9999px;
+	 display:block;
+}
+
+/* 清楚浮动 */
+.clearInnerFloat {
+	 overflow:hidden;
+	 zoom:1;
+}
+
+.clearOuterFloat {
+	 clear:both;
+}
+
+
+
+
+/********* 链接样式 *********/
+a:link,a:visited {
+	color:#069;
+	 text-decoration:none;
+}
+
+a:hover,a:active {
+	 color:red;
+}
+
+/* 暗灰色 */
+.color_g a:link,.color_g a:visited{
+	 color:#62635d;
+}
+
+.color_g a:hover,.color_g a:active{
+	 color:#000;
+}
+
+/* 深蓝色1 */
+.color_b1 a:link,.color_b1 a:visited{
+	 color:#297d96;
+}
+
+/* 深蓝色2 */
+.color_b1 a:link,.color_b1 a:visited{
+	 color:#2087b2;
+}
+
+/* 白色 */
+.color_w a:link,.color_w a:visited {
+	 color:#ffffff;
+}

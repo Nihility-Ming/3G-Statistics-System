@@ -1,0 +1,15 @@
+配置如下：
+1、修改数据库配置
+application/config/database.php
+
+2、修改邮箱配置
+application/config/email.php
+application/libraries/MY_Custom.php
+
+
+2014/03/08 更新日志
+1、 /application/libraries/MY_Custom.php	加入获取IP函数
+2、 /application/views/index.php		优化用户体验，美化登录提示
+3、 /application/controllers/welcome.php	加入获取管理员详细信息功能
+
+2014/03/09 更新日志

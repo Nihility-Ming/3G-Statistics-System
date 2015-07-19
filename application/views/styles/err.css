@@ -1,0 +1,14 @@
+/* 错误页面 */
+.box {
+	width: 500px;
+	margin:0 auto;
+	padding-top: 130px;
+	text-align: center;
+}
+.box h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+span#seconds {
+	color:red;
+}
