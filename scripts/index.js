@@ -1,5 +1,5 @@
 // preload image
-var url = 'application/views/';
+var url = '/';
 new Image().src = url + 'images/index_23_hover.png';
 
 $(function() {

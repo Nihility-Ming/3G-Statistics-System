@@ -73,7 +73,7 @@ html,body { margin:0; padding:0; }
     color:#444;
     margin-top:10px;
     padding-top:50px;
-    background:url(application/views/images/index_03.png) center top no-repeat;
+    background:url(/images/index_03.png) center top no-repeat;
 }
 table {
     border-collapse:collapse;

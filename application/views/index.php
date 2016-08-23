@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>登陆 - <?=$this -> config -> item('website_name') ?></title>
-<link href="<?=base_url("application/views/styles/global.css")?>" rel="stylesheet" type="text/css" />
-<link href="<?=base_url("application/views/styles/index.css")?>" rel="stylesheet" type="text/css" />
+<link href="<?=base_url("/styles/global.css")?>" rel="stylesheet" type="text/css" />
+<link href="<?=base_url("/styles/index.css")?>" rel="stylesheet" type="text/css" />
 <style type="text/css">
 #overlay {
 	font-weight:bold;
@@ -23,7 +23,7 @@
 }
 </style>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="<?=base_url("application/views/scripts/index.js")?>"></script>
+<script type="text/javascript" src="<?=base_url("/scripts/index.js")?>"></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             <p class="first"><label for="username" class="hiddenText text username">用户名：</label><input type="text" class="text"  name=" username" id="username" maxleng="20" placeholder="请输入用户名" /></p>
             <p><label for="password" class="hiddenText text password">密码：</label><input type="password" class="text" name="password" id="password"  maxleng="20" placeholder="请输入密码" /></p>
             <p  class="captcha"><label for="code" class="hiddenText text code">验证码：</label><input type="text" class="text code" name="code" id="code" maxlength="4" /><?=$cap['image']  ?></p>
-            <p><input type="image" src="<?=base_url("application/views/images/index_23.png"); ?>" title="马上登录" id="submit" /></p>
+            <p><input type="image" src="<?=base_url("/images/index_23.png"); ?>" title="马上登录" id="submit" /></p>
         </form>
     </div> <!-- /box -->
     

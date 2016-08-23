@@ -17,7 +17,7 @@ class MY_Custom extends CI_Controller {
 		$this->email->to($to);
 		$this->email->subject($title);
 		$this->email->message($content); 
-		$this->email->attach("application/views/images/index_03.png");
+		$this->email->attach("/images/index_03.png");
 		$this->email->send();
 		return true;
 	}

@@ -1,15 +1,15 @@
-еДжцхГобё╨
-1║╒пч╦дйЩ╬щ©БеДжц
+О©╫О©╫О©╫О©╫О©╫О©╫О©╫бёО©╫
+1О©╫О©╫О©╫ч╦О©╫О©╫О©╫О©╫щ©О©╫О©╫О©╫О©╫О©╫
 application/config/database.php
 
-2║╒пч╦дсйоДеДжц
+2О©╫О©╫О©╫ч╦О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
 application/config/email.php
 application/libraries/MY_Custom.php
 
 
-2014/03/08 ╦Эпбхуж╬
-1║╒ /application/libraries/MY_Custom.php	╪схК╩Ях║IP╨╞йЩ
-2║╒ /application/views/index.php		се╩╞сц╩╖лЕяИё╛цю╩╞╣гб╪лАй╬
-3║╒ /application/controllers/welcome.php	╪схК╩Ях║╧эюМт╠оЙо╦пео╒╧╕дэ
+2014/03/08 О©╫О©╫О©╫О©╫О©╫О©╫ж╬
+1О©╫О©╫ /application/libraries/MY_Custom.php	О©╫О©╫О©╫О©╫О©╫х║IPО©╫О©╫О©╫О©╫
+2О©╫О©╫ //index.php		О©╫е╩О©╫О©╫ц╩О©╫О©╫О©╫О©╫Иё╛О©╫О©╫О©╫О©╫О©╫О©╫б╪О©╫О©╫й╬
+3О©╫О©╫ /application/controllers/welcome.php	О©╫О©╫О©╫О©╫О©╫х║О©╫О©╫О©╫О©╫т╠О©╫О©╫о╦О©╫О©╫о╒О©╫О©╫О©╫О©╫
 
-2014/03/09 ╦Эпбхуж╬
+2014/03/09 О©╫О©╫О©╫О©╫О©╫О©╫ж╬

@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>后台 - <?=$this -> config -> item('website_name') ?></title>
-<link href="<?=base_url("application/views/styles/global.css")?>" rel="stylesheet" type="text/css" />
-<link href="<?=base_url("application/views/styles/admin.css")?>" rel="stylesheet" type="text/css" />
+<link href="<?=base_url("/styles/global.css")?>" rel="stylesheet" type="text/css" />
+<link href="<?=base_url("/styles/admin.css")?>" rel="stylesheet" type="text/css" />
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="<?=base_url("application/views/scripts/admin.js")?>"></script>
-<script src="<?=base_url("application/views/scripts/My97DatePicker/WdatePicker.js")?>"></script>
+<script src="<?=base_url("/scripts/admin.js")?>"></script>
+<script src="<?=base_url("/scripts/My97DatePicker/WdatePicker.js")?>"></script>
 </head>
 
 <body>
